@@ -13,4 +13,4 @@ and then initialize and present it like so:-
         slidingController.initWith(controller: menuController)
         slidingController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         self.navigationController?.present(slidingController, animated: false, completion: nil)
-``
+```
