@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sliding View Controller-->
+        <scene sceneID="u1g-ah-q5a">
+            <objects>
+                <viewController storyboardIdentifier="SlidingViewController" automaticallyAdjustsScrollViewInsets="NO" id="Tpt-SY-JaX" customClass="SlidingViewController" customModule="RynlyUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iRM-Fd-0G3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29G-l9-Kj8">
+                                <rect key="frame" x="-238" y="64" width="238" height="603"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="zet-Wl-5cn"/>
+                                </constraints>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="29G-l9-Kj8" firstAttribute="top" secondItem="MZx-AA-TwT" secondAttribute="top" id="jvr-fl-fLn"/>
+                            <constraint firstItem="MZx-AA-TwT" firstAttribute="bottom" secondItem="29G-l9-Kj8" secondAttribute="bottom" id="vrE-1G-xpX"/>
+                            <constraint firstItem="29G-l9-Kj8" firstAttribute="leading" secondItem="MZx-AA-TwT" secondAttribute="leading" constant="-238" id="y7u-VN-U5c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MZx-AA-TwT"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="constraintTableViewLeading" destination="y7u-VN-U5c" id="Eym-Va-fup"/>
+                        <outlet property="containerView" destination="29G-l9-Kj8" id="S3G-MV-oIe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AfN-ic-3tU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3719.1999999999998" y="-140.39408866995075"/>
+        </scene>
+    </scenes>
+</document>
